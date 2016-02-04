@@ -162,7 +162,7 @@ CONSTRAINT "fk_mscusad_parentid"
 	ON DELETE CASCADE
 ) ENGINE=InnoDB CHARACTER SET = utf8;
 
-CREATE INDEY "idx_mscusad_langid" ON "mshop_customer_address" ("langid");
+CREATE INDEX "idx_mscusad_langid" ON "mshop_customer_address" ("langid");
 
 CREATE INDEX "idx_mscusad_sid_ln_fn" ON "mshop_customer_address" ("siteid", "lastname", "firstname");
 
